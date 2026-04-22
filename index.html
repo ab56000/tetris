@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>現代風俄羅斯方塊</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="left-panel">
+            <h1>TETRIS</h1>
+            <div class="score-board">
+                <div class="score-title">分數</div>
+                <div id="score" class="score-value">0</div>
+            </div>
+            <div class="score-board">
+                <div class="score-title">消除行數</div>
+                <div id="lines" class="score-value">0</div>
+            </div>
+            <div class="score-board">
+                <div class="score-title">等級</div>
+                <div id="level" class="score-value">1</div>
+            </div>
+            <div class="controls-info">
+                <p><b>↑</b> : 旋轉</p>
+                <p><b>← →</b> : 移動</p>
+                <p><b>↓</b> : 加速下落</p>
+                <p><b>Space</b> : 直接下落</p>
+            </div>
+        </div>
+
+        <div class="center-panel">
+            <canvas id="game-canvas" width="300" height="600"></canvas>
+            <div id="game-over-screen" class="overlay hidden">
+                <h2>遊戲結束</h2>
+                <button id="restart-btn">再玩一次</button>
+            </div>
+            <div id="start-screen" class="overlay">
+                <h2>準備好了嗎？</h2>
+                <button id="start-btn">開始遊戲</button>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="next-piece-container">
+                <div class="score-title">下一個</div>
+                <canvas id="next-canvas" width="120" height="120"></canvas>
+            </div>
+            
+            <button id="toggle-sound-btn" class="icon-btn">🔊 聲音: 開</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
