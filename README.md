@@ -4,7 +4,7 @@
 
 ## 遊玩展示
 
-![遊玩過程錄影](./tetris_gameplay.webp)
+![遊玩過程錄影](./tetris_gameplay_new.webp)
 
 ## 功能亮點
 
